@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/styles/style.css">
+    <link rel="stylesheet" href="/fontawesome-free-6.0.0-web/css/all.css">
+</head>
+<body>
+    <div id="loader"></div>
+    <div style="display:none;" id="myDiv" class="animate-bottom">
+        <h2>Tada!</h2>
+        <p>Some text in my newly loaded page..</p>
+    </div>
+    <div>
+        <center>
+            <input id="search" onchange="handleSearch();" type="text" placeholder="Search By Name:">
+            <input id="search2" onchange="handleSearchBynickname();" type="text" placeholder="Search By Nickname:">
+        </center>
+    </div>
+    <br>
+
+    <div class="tablesname">
+        <span onclick="sortByName();" class="name">Name<i class="fa-solid fa-arrow-down-a-z"></i></span>
+        <span onclick="sortByNickname();" class="nickname">Nickname<i class="fa-solid fa-arrow-down-a-z"></i><i class="fa-solid fa-arrow-down-z-a"></i></span>
+        <span onclick="sortByRole()" class="role">Role<i class="fa-solid fa-arrow-down-a-z"></i></span>
+        <span onclick="sortByActor()" class="actorname">Actorname<i class="fa-solid fa-arrow-down-a-z"></i></span>
+        <span onclick="sortByStatus()" class="status">Status<i class="fa-solid fa-arrow-down-a-z"></i></span>
+        <span class="photo">Image</span>
+    </div>
+
+    <div>
+        <table id="container-live">
+            <!-- <button onclick="fetchBase()">Reload</button> -->
+            <center><button class="refreshbtn" onclick="reset()">Reset</button></center>
+
+        </table>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>

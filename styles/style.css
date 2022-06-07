@@ -1,0 +1,101 @@
+body{
+    background-color:rgb(19, 17, 17) ;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+#search{
+    background-color:rgba(19, 17, 17, 0) ;
+    border: none;
+    color: red;
+}
+#search::placeholder{
+    color: red;
+}
+.tablesname{
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px ;
+    color: brown;
+    padding-bottom: 10px;
+}
+
+.tablesname .name{
+    position: relative;
+    left: 6%;
+}
+.name:hover{
+    cursor: pointer;
+}
+.tablesname .nickname{
+    position: relative;
+    left: 1%;
+}
+.nickname:hover{
+    cursor: pointer;
+}
+.tablesname .role{
+    position: relative;
+    left: 8%;
+}
+.role:hover{
+    cursor: pointer;
+}
+.tablesname .status{
+    position: relative;
+    left: 7%;
+}
+.status:hover{
+    cursor: pointer;
+}
+.tablesname .actorname{
+    position: relative;
+    left: 14%;
+}
+.actorname:hover{
+    cursor:pointer;
+}
+.tablesname .photo{
+    position: relative;
+    right: 2%;
+}
+#container-live {
+    width: 100%;
+    border: 1px solid white;
+}
+#container-live td{
+    border: 10px solid rgb(65, 58, 58);
+    background: rgb(65, 58, 58);
+    text-align: center;
+}
+#container-live img{
+    border-radius: 10px;
+    object-fit: cover;
+}
+#loader {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    z-index: 1;
+    width: 150px;
+    height: 150px;
+    margin: -75px 0 0 -75px;
+    border: 16px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 16px solid #3498db;
+    width: 120px;
+    height: 120px;
+    -webkit-animation: spin 2s linear infinite;
+    animation: spin 2s linear infinite;
+  }
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+.refreshbtn{
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+    background-color: rgba(250, 15, 15, 0.322);
+  }
